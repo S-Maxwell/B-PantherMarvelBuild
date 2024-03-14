@@ -94,7 +94,7 @@ article p, #instruction p {
 .sprite {
     width: 150px;
     height: 150px;
-    background-image: url(../images/);
+    background-image: url(../images/BlackPantherSprites2.jpg);
 }
 
 #letitia {
@@ -117,8 +117,8 @@ article p, #instruction p {
     background-position: -750px 0;
 }
 
-#chadwick:hover, #letitia:hover, #michael:hover, #danai:hover, #lupita:hover #winston:hover {
-    background-position-y: 150px;
+#chadwick:hover, #letitia:hover, #michael:hover, #danai:hover, #lupita:hover, #winston:hover {
+    background-position-y: -150px;
 }
 
 /* Footer Rules */
