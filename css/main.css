@@ -1,0 +1,256 @@
+.hidden {
+    display: none;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background:black;
+    color: silver;
+}
+
+/* main header rules */
+
+header {
+    background-color: rgb(18, 16, 16);
+    padding: 45px 0; /*top and bottom, left and right*/
+}
+
+#main-logo {
+    width: 350px;
+    display: block;
+    margin: 0px auto; /*margin top and bottom 0, margin left and right auto or equal*/
+    box-shadow: 2px 2px 5px white;
+}
+
+#character_nav {
+    background-color:red;
+    background-image: url(../images/Background\ 6.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: luminosity;
+}
+
+.characters {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-size: 14px;
+}
+
+.characters li {
+    height: 250px;
+    background-color:black ;
+    margin: 15px 10px;
+    text-align: center; 
+    cursor: pointer;
+    box-shadow: 0 175px 0 0 red inset;
+    transition: box-shadow 0.5s ease-in;
+}
+
+.characters li:hover {
+    box-shadow: 0 220px 0 0 inset;
+}
+.characters li h3 {
+    color: white;
+    padding: 15px 8px;
+    box-shadow: 0 5px 0 0 red;
+}
+
+.characters li h5{
+    color: rgb(54, 50, 50);
+    padding: 12px 8px;
+}
+
+.characters li a {
+    text-decoration: none;
+}
+
+article h3, #instruction h3{
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 14px;
+}
+
+article, #instruction {
+    padding: 20px;
+}
+
+article p, #instruction p {
+    width: 80%;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    margin: 0 auto;
+}
+/* Sprite */
+
+.sprite {
+    width: 150px;
+    height: 150px;
+    background-image: url(../images/BlackPantherSprites.jpg);
+}
+
+#letitia {
+    background-position: -150px 0;
+}
+
+#michael {
+    background-position: -300px 0;
+}
+
+#danai {
+    background-position: -450px 0;
+}
+
+#lupita {
+    background-position: -600px 0;
+}
+
+#winston {
+    background-position: -750px 0;
+}
+
+#chadwick:hover, #letitia:hover, #michael:hover, #danai:hover, #lupita:hover #winston:hover {
+    background-position-y: 150px;
+}
+
+/* Footer Rules */
+
+#instructions {
+    padding: 30px;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    padding: 30px 0;
+}
+
+.sticky-footer {
+    position: sticky; 
+    top: 100%;
+    height: 80px; 
+    background-color: black;
+}
+
+/* lightbox rules */
+
+.lightbox {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background-color: rgba(0,0,0,0.85);
+    font-style: normal;
+    background-image: url(../images/Background\ 2.jpg);
+    background-repeat: no-repeat;
+    background-size: 55vh;
+    background-position: 40px bottom;
+    display: none;
+}
+
+#lightbox {
+    background-image: url(../images/Black\ Panther\ Animation\ 3.png);
+    background-size: 60vh;
+    background-size: 45%;
+    background-position: 50px;
+    background-position-y:-1px ;
+    background-position-x: 0px ;
+}
+
+#lightbox2 {
+    background-image: url(../images/Letitia\ Wright\ Animation.png);
+    background-size: 60vh;
+    background-size: 45%;
+    background-position: 50px;
+    background-position-y:-1px ;
+    background-position-x: 0px ;
+}
+
+#lightbox3 {
+    background-image: url(../images/Michael\ B.\ Jordan\ Animation.png);
+    background-size: 60vh;
+    background-size: 45%;
+    background-position: 50px;
+    background-position-x: 0px ;
+
+}
+
+#lightbox4 {
+    background-image: url(../images/Danai\ Gurira\ Animation\ 3.jpg);
+    background-size: 60vh;
+    background-size: 45%;
+    background-position: 50px;
+    background-position-y:-1px ;
+    background-position-x: 0px ;
+}
+
+#lightbox5 {
+    background-image: url(../images/Danai\ Gurira\ Animation\ 3.jpg);
+    background-size: 60vh;
+    background-size: 45%;
+    background-position: 50px;
+    background-position-y:-1px ;
+    background-position-x: 0px ;
+}
+
+#lightbox5 {
+    background-image: url(../images/Lupita\ Nyong\'o\ Animation\ 2.png);
+    background-size: 60vh;
+    background-size: 45%;
+    background-position: 50px;
+    background-position-y:-1px ;
+    background-position-x: 0px ;
+}
+
+
+#lightbox6 {
+    background-image: url(../images/Winston\ Duke\ Animation.png);
+    background-size: 60vh;
+    background-size: 45%;
+    background-position: 50px;
+    background-position-x: 0px ;
+}
+
+.lightbox_close {
+    position: relative;
+    top: 20px;
+    left: 95%;
+    color: red;
+    font-size: 46px; 
+    text-decoration: none; 
+    font-weight: bold;
+    transition: color .3s linear;
+}
+
+.lightbox_close:hover {
+    color:white;
+}
+
+.lightbox article {
+    width: 55%;
+    margin-left: 40%;
+    padding-top: 50px;
+}
+
+.lb_heading {
+    font-size: 34px;
+
+}
+
+.lb_text {
+    line-height: 28px;
+}
+
+.lightbox:target {
+    display: block;
+}
